@@ -1,0 +1,19 @@
+/* Icon style */
+
+.icon-color {
+  color: #7e7e7e;
+  margin-right: 2em;
+}
+
+.icon-color-primary {
+  color: var(--primary-color);
+  margin-right: 2em;
+}
+
+.fa-heart:focus {
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
+}

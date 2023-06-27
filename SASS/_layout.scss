@@ -1,0 +1,108 @@
+$layout-display: flex;
+$layout-text-align: center;
+$layout-align-items: center;
+$layout-width: 100%;
+
+/* GENERAL */
+
+.container {
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+/* Section style */
+
+.section__style {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  &--h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 2em 0;
+    display: $layout-display;
+    align-items: flex-end;
+  }
+}
+
+/* Header */
+
+.header-style {
+  font-size: 30px;
+  text-align: $layout-text-align;
+  padding: 0.5em;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
+header > div {
+  display: $layout-display;
+  justify-content: center;
+  padding: 1em;
+  background-color: #eaeaea;
+}
+
+header > div > h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-layout {
+  display: $layout-display;
+  align-items: $layout-align-items;
+}
+
+/* Index.html Section Information */
+
+.information {
+  display: block;
+  text-align: $layout-text-align;
+  margin-bottom: 3em;
+
+  &--h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1.5em 2em 0.5em 2em;
+  }
+
+  &--p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 2em;
+  }
+}
+
+/* Index.html - Section Fonctionnement */
+
+.fonctionnement {
+  background-color: white;
+  padding-bottom: 1.5em;
+
+  &__article {
+    margin: 0 0 1.5em 1em;
+    position: relative;
+
+    &--number-fonctionnement {
+      position: absolute;
+      display: $layout-display;
+      align-items: $layout-align-items;
+      justify-content: center;
+      bottom: 15px;
+      left: -15px;
+      color: white;
+      background-color: var(--primary-color);
+      padding: 0.25em;
+      border-radius: 100%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+/* Restaurants */
+
+.restaurant {
+  padding-bottom: 3em;
+}

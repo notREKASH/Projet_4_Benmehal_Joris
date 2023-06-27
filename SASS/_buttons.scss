@@ -1,0 +1,42 @@
+/* Button Style */
+
+$buttons-font-weight: bold;
+$buttons-font-size: 16px;
+
+.btn-pink {
+  padding: 1em 1.5em;
+  background-image: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
+  box-shadow: 0px 4px 10px 0px #00000040;
+  border-radius: 25px;
+  color: white;
+  font-size: $buttons-font-size;
+  font-weight: $buttons-font-weight;
+  transition: background-image, box-shadow 500ms;
+
+  &:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      ),
+      linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  }
+
+  box-shadow: 0px 4px 15px 0px #00000059;
+}
+
+.btn-grey {
+  display: flex;
+  justify-content: center;
+  font-size: $buttons-font-size;
+  font-weight: $buttons-font-weight;
+  width: 100%;
+  padding: 1.5em 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px #00000026;
+  background-color: #f6f6f6;
+}

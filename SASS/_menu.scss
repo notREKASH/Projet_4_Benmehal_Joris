@@ -1,0 +1,89 @@
+/* Menu Restaurants */
+
+$menu-width: 100%;
+$menu-margin-bottom: 1em;
+$menu-padding: 1em;
+
+.background__image--position {
+  width: $menu-width;
+  z-index: -1;
+  max-height: 275px;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  width: $menu-width;
+  background-color: #f6f6f6;
+  top: -50px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+  &__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $menu-padding 0;
+
+    &--h2 {
+      font-size: 28px;
+      font-family: "Shrikhand", cursive;
+      font-style: italic;
+    }
+  }
+
+  &__card {
+    padding: $menu-padding;
+    margin: 0 auto;
+
+    &--h3 {
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 1.25em;
+      border-bottom: 3px solid #99e2d0;
+      width: 40px;
+      margin-bottom: $menu-margin-bottom;
+    }
+
+    &__plats {
+      background-color: white;
+      box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
+      margin: 0 auto;
+      border-radius: 15px;
+      padding: $menu-padding;
+      margin-bottom: $menu-margin-bottom;
+
+      &--a {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+      }
+
+      &--h4 {
+        font-size: 18px;
+        line-height: 21.09px;
+        font-weight: bold;
+        grid-column: 1 / span 2;
+      }
+
+      &--p {
+        font-weight: 300;
+        grid-column: 1 / span 1;
+        white-space: nowrap;
+        font-size: 15.04px;
+      }
+
+      &--p:nth-of-type(2) {
+        grid-column: 2 / span 1;
+        text-align: right;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.button__commander {
+  margin: 1em auto 0 auto;
+  padding: 1.25em 3em;
+}
