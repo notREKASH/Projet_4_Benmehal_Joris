@@ -41,20 +41,74 @@ $card-radius: 15px;
     }
   }
 
-  &__info {
+  &__div {
     display: grid;
-    align-items: center;
-    height: 100%;
-    padding: 1em;
     grid-template-columns: repeat(1, 1fr 0.1fr);
+    justify-content: space-evenly;
+    padding: 1em;
 
-    &--h3 {
-      font-size: 18px;
-      font-weight: 700;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      line-height: 1.5em;
+
+      &--h3 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      &--p {
+        font-size: 17px;
+      }
     }
 
-    &--p {
-      font-size: 17px;
+    &__button {
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+
+      &--fa-regular {
+        opacity: 1;
+      }
+
+      &--fa-solid {
+        opacity: 0;
+        position: absolute;
+        transition-property: all;
+        transition-duration: 500ms;
+        background-size: 100%;
+        line-height: 1;
+
+        &:hover {
+          opacity: 1;
+          color: transparent;
+          background-image: linear-gradient(
+            193.33deg,
+            #9356dc -11.44%,
+            #ff79da 123.93%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+
+        &::before {
+          opacity: 1;
+          color: transparent;
+          background-image: linear-gradient(
+            193.33deg,
+            #9356dc -11.44%,
+            #ff79da 123.93%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+      }
     }
   }
 }
