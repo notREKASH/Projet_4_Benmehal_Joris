@@ -10,104 +10,118 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/7a044cfcf4.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <button><i class="fa-solid fa-arrow-left"></i></button>
-      <h1>ohmyfood</h1>
+    <header class="header-style header-layout">
+      <a href="../index.html"><i class="fa-solid fa-arrow-left fa-xs"></i></a>
+      <h1 class="logo-font">ohmyfood</h1>
     </header>
 
     <!-- Background image -->
 
-    <div>
-      <img src="" alt="" />
+    <div class="background__image">
+      <img
+        class="background__image--position"
+        src="../assets/images/restaurants/le-delice-des-sens.jpg"
+        alt=""
+      />
     </div>
 
     <!-- Section Menu -->
 
-    <section>
-      <div>
-        <h2>Le délice des sens</h2>
-        <i class="fa-light fa-heart"></i>
+    <section class="menu">
+      <div class="menu__title">
+        <h2 class="menu__title--h2">Le délice des sens</h2>
+        <i class="fa-regular fa-heart fa-xl"></i>
       </div>
-      <div>
-        <h3>Entrées</h3>
-        <div>
-          <a href="">
-            <h4>Tartare de thon</h4>
-            <p>Assaisonné au yuzu</p>
-            <p>25€</p>
+      <div class="menu__card">
+        <h3 class="menu__card--h3">Entrées</h3>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Tartare de thon</h4>
+            <p class="menu__card__plats--p">Assaisonné au yuzu</p>
+            <p class="menu__card__plats--p">25€</p>
           </a>
         </div>
-        <div>
-          <a href="">
-            <h4>Bouchée de homard croustillant</h4>
-            <p>Et sa farandole de petits légumes</p>
-            <p>35€</p>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">
+              Bouchée de homard croustillant
+            </h4>
+            <p class="menu__card__plats--p">
+              Et sa farandole de petits légumes
+            </p>
+            <p class="menu__card__plats--p">35€</p>
           </a>
         </div>
-        <div>
-          <a href="">
-            <h4>Poulet rôti aux herbes de Provence</h4>
-            <p>Et sa crème de truffe</p>
-            <p>40€</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h3>Plats</h3>
-        <div>
-          <a href="">
-            <h4>Poulet rôti aux herbes de Provence</h4>
-            <p>Et sa crème de truffe</p>
-            <p>40€</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <h4>Langouste rôtie</h4>
-            <p>Et ses légumes de saison</p>
-            <p>35€</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <h4>Côte de bœuf Angus</h4>
-            <p>Et sa purée de panais</p>
-            <p>44€</p>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">
+              Poulet rôti aux herbes de Provence
+            </h4>
+            <p class="menu__card__plats--p">Et sa crème de truffe</p>
+            <p class="menu__card__plats--p">40€</p>
           </a>
         </div>
       </div>
-      <div>
-        <h3>Desserts</h3>
-        <div>
-          <a href="">
-            <h4>Œuf au plat</h4>
-            <p>Assaisonné à la truffe sur lit de caviar</p>
-            <p>76€</p>
+      <div class="menu__card">
+        <h3 class="menu__card--h3">Plats</h3>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">
+              Poulet rôti aux herbes de Provence
+            </h4>
+            <p class="menu__card__plats--p">Et sa crème de truffe</p>
+            <p class="menu__card__plats--p">40€</p>
           </a>
         </div>
-        <div>
-          <a href="">
-            <h4>Crème brulée</h4>
-            <p>Revisitée</p>
-            <p>22€</p>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Langouste rôtie</h4>
+            <p class="menu__card__plats--p">Et ses légumes de saison</p>
+            <p class="menu__card__plats--p">35€</p>
           </a>
         </div>
-        <div>
-          <a href="">
-            <h4>Tiramisu</h4>
-            <p>À la noisette</p>
-            <p>23€</p>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Côte de bœuf Angus</h4>
+            <p class="menu__card__plats--p">Et sa purée de panais</p>
+            <p class="menu__card__plats--p">44€</p>
           </a>
         </div>
       </div>
-      <button>Commander</button>
+      <div class="menu__card">
+        <h3 class="menu__card--h3">Desserts</h3>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Œuf au plat</h4>
+            <p class="menu__card__plats--p">
+              Assaisonné à la truffe sur lit de caviar
+            </p>
+            <p class="menu__card__plats--p">76€</p>
+          </a>
+        </div>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Crème brulée</h4>
+            <p class="menu__card__plats--p">Revisitée</p>
+            <p class="menu__card__plats--p">22€</p>
+          </a>
+        </div>
+        <div class="menu__card__plats">
+          <a href="" class="menu__card__plats--a">
+            <h4 class="menu__card__plats--h4">Tiramisu</h4>
+            <p class="menu__card__plats--p">À la noisette</p>
+            <p class="menu__card__plats--p">23€</p>
+          </a>
+        </div>
+      </div>
+      <button class="btn-pink button__commander">Commander</button>
     </section>
 
     <!-- Section Footer -->
