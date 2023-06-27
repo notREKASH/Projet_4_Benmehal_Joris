@@ -157,6 +157,8 @@ body {
   margin: 0 auto;
 }
 
+/* Button Style */
+
 .btn-pink {
   padding: 1em 1.5em;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -179,6 +181,8 @@ body {
   background-color: #f6f6f6;
 }
 
+/* Icon style */
+
 .icon-color {
   color: #7e7e7e;
   margin-right: 2em;
@@ -189,18 +193,22 @@ body {
   margin-right: 2em;
 }
 
-section {
+/* Section style */
+
+.section__style {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-section > h2 {
+.section__style--h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 2em 0;
   display: flex;
   align-items: flex-end;
 }
+
+/* Card style */
 
 .card {
   border-radius: 15px;
@@ -211,17 +219,17 @@ section > h2 {
   position: relative;
 }
 
-.card > a {
+.card__a {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.card-image {
+.card__a__div {
   position: relative;
 }
 
-.card-image > img {
+.card__a__div--img {
   height: 170px;
   width: 100%;
   object-fit: cover;
@@ -230,7 +238,7 @@ section > h2 {
   border-top-right-radius: 15px;
 }
 
-.card-image > p {
+.card__a__div--p {
   position: absolute;
   top: 1em;
   right: 1em;
@@ -242,7 +250,7 @@ section > h2 {
   color: #008766;
 }
 
-.card-info {
+.card__info {
   display: grid;
   align-items: center;
   height: 100%;
@@ -250,12 +258,12 @@ section > h2 {
   grid-template-columns: repeat(1, 1fr 0.1fr);
 }
 
-.card-info > h3 {
+.card__info--h3 {
   font-size: 18px;
   font-weight: 700;
 }
 
-.card-info > p {
+.card__info--p {
   font-size: 17px;
 }
 
@@ -288,39 +296,39 @@ header > div > h2 {
   align-items: center;
 }
 
-/* Call to action */
+/* Index.html Section Information */
 
-.call-to-action {
+.information {
   display: block;
   text-align: center;
   margin-bottom: 3em;
 }
 
-.call-to-action > h2 {
+.information--h2 {
   font-size: 24px;
   font-weight: 700;
-  padding: 0 2em 0.5em 2em;
+  padding: 1.5em 2em 0.5em 2em;
 }
 
-.call-to-action > p {
+.information--p {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 2em;
 }
 
-/* Fonctionnement */
+/* Index.html - Section Fonctionnement */
 
 .fonctionnement {
   background-color: white;
   padding-bottom: 1.5em;
 }
 
-.fonctionnement > div > article {
+.fonctionnement__article {
   margin: 0 0 1.5em 1em;
   position: relative;
 }
 
-.number-fonctionnement {
+.fonctionnement__article--number-fonctionnement {
   position: absolute;
   display: flex;
   align-items: center;
@@ -343,37 +351,37 @@ header > div > h2 {
 
 /* Footer */
 
-footer {
+.footer {
   background-color: #353535;
   color: white;
 }
 
-footer > h2 {
+.footer--h2 {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   padding: 1em 1em 0.5em 1em;
 }
 
-footer > ul {
+.footer__ul {
   padding: 1em;
 }
 
-footer > ul,
-footer > ul > li {
+.footer__ul,
+.footer__ul__li {
   display: grid;
   line-height: 2em;
 }
 
-footer > ul > li > a {
+.footer__ul__li__a {
   display: flex;
   align-items: center;
 }
 
-footer > ul > li > a > i {
+.footer__ul__li__a--i {
   margin-right: 0.5em;
 }
 
-/* Restaurants */
+/* Menu Restaurants */
 
 .background__image--position {
   width: 100%;
