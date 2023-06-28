@@ -72,42 +72,39 @@ $card-radius: 15px;
       justify-content: center;
       position: relative;
       cursor: pointer;
+      line-height: 1;
+
+      .heart-checkbox {
+        display: none;
+      }
 
       &--fa-regular {
         opacity: 1;
+        transition: opacity 0.5s ease-in-out;
       }
 
       &--fa-solid {
         opacity: 0;
         position: absolute;
-        transition-property: all;
-        transition-duration: 500ms;
+        transition: all 0.5s ease-in-out;
         background-size: 100%;
         line-height: 1;
+        color: transparent;
+        background-image: linear-gradient(
+          193.33deg,
+          #9356dc -11.44%,
+          #ff79da 123.93%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
 
-        &:hover {
-          opacity: 1;
-          color: transparent;
-          background-image: linear-gradient(
-            193.33deg,
-            #9356dc -11.44%,
-            #ff79da 123.93%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-        }
+      .heart-checkbox:checked ~ &--fa-regular {
+        opacity: 0;
+      }
 
-        &::before {
-          opacity: 1;
-          color: transparent;
-          background-image: linear-gradient(
-            193.33deg,
-            #9356dc -11.44%,
-            #ff79da 123.93%
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-        }
+      .heart-checkbox:checked ~ &--fa-solid {
+        opacity: 1;
       }
     }
   }
