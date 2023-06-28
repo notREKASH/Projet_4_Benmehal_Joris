@@ -1,8 +1,22 @@
+// Responsive
+
+$desktop-large: 1440px;
+$desktop: 1024px;
+$mobile: 767.8px;
+
+// General
+
+.menu-bg-color {
+  @media (min-width: $desktop) {
+    background-color: white;
+  }
+}
+
 /* Menu Restaurants */
 
 $menu-width: 100%;
 $menu-margin-bottom: 1em;
-$menu-padding: 1em;
+$menu-padding: 2em;
 
 .header {
   background-color: white;
@@ -34,6 +48,10 @@ $menu-padding: 1em;
   z-index: -1;
   max-height: 275px;
   object-fit: cover;
+
+  @media (min-width: $desktop) {
+    max-height: 380px;
+  }
 }
 
 .menu {
@@ -44,11 +62,30 @@ $menu-padding: 1em;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    margin: 0 auto;
+    top: -20px;
+  }
+
+  // Le after gère la trou créer en bas par le décalage causé par top: -20px
+
+  &::after {
+    @media (min-width: $desktop) {
+      content: "";
+      position: relative;
+      top: 20px;
+      display: block;
+      height: 50px;
+      background-color: #f6f6f6;
+    }
+  }
+
   &__title {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: $menu-padding 0;
+    padding: 2em 0 3em 0;
 
     &--h2 {
       font-size: 28px;
@@ -60,6 +97,11 @@ $menu-padding: 1em;
   &__card {
     width: 90vw;
     margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
     &--h3 {
       font-size: 16px;

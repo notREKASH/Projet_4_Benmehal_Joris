@@ -317,6 +317,12 @@ header > div > h2 {
   }
 }
 
+@media (min-width: 1024px) {
+  .menu-bg-color {
+    background-color: white;
+  }
+}
+
 /* Menu Restaurants */
 .header {
   background-color: white;
@@ -346,6 +352,11 @@ header > div > h2 {
   max-height: 275px;
   object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .background__image--position {
+    max-height: 380px;
+  }
+}
 
 .menu {
   position: relative;
@@ -355,11 +366,28 @@ header > div > h2 {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
+@media (min-width: 1024px) {
+  .menu {
+    max-width: 1050px;
+    margin: 0 auto;
+    top: -20px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu::after {
+    content: "";
+    position: relative;
+    top: 20px;
+    display: block;
+    height: 50px;
+    background-color: #f6f6f6;
+  }
+}
 .menu__title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1em 0;
+  padding: 2em 0 3em 0;
 }
 .menu__title--h2 {
   font-size: 28px;
@@ -369,6 +397,12 @@ header > div > h2 {
 .menu__card {
   width: 90vw;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .menu__card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 .menu__card--h3 {
   font-size: 16px;
@@ -396,7 +430,7 @@ header > div > h2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  padding: 1em;
+  padding: 2em;
   background-color: transparent;
   text-align: left;
   padding-right: 0;
