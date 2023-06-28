@@ -1,30 +1,60 @@
+$desktop-large: 1440px;
+
 /* Footer */
 
 .footer {
   background-color: #353535;
   color: white;
 
-  &--h2 {
-    font-family: "Shrikhand", cursive;
-    font-size: 18px;
-    padding: 1em 1em 0.5em 1em;
-  }
-
-  &__ul {
-    padding: 1em;
-  }
-
-  &__ul,
-  &__ul__li {
-    display: grid;
-    line-height: 2em;
-
-    &__a {
+  &__div {
+    @media (min-width: $desktop-large) {
       display: flex;
       align-items: center;
+      justify-content: end;
+      padding: 2em 0 0.25em 0;
+    }
 
-      &--i {
-        margin-right: 0.5em;
+    &--h2 {
+      font-family: "Shrikhand", cursive;
+      font-size: 18px;
+      padding: 1em 1em 0.5em 1em;
+
+      @media (min-width: $desktop-large) {
+        padding: 1em;
+        margin-left: 3em;
+        order: 2;
+      }
+    }
+
+    &__ul {
+      padding: 1em;
+    }
+
+    &__ul,
+    &__ul__li {
+      display: grid;
+      line-height: 2em;
+
+      &:nth-child(3) {
+        @media (min-width: $desktop-large) {
+          margin-left: 3em;
+        }
+      }
+
+      @media (min-width: $desktop-large) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        order: 1;
+      }
+
+      &__a {
+        display: flex;
+        align-items: center;
+
+        &--i {
+          margin-right: 0.5em;
+        }
       }
     }
   }

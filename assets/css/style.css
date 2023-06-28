@@ -122,23 +122,51 @@
   background-color: #353535;
   color: white;
 }
-.footer--h2 {
+@media (min-width: 1440px) {
+  .footer__div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2em 0 0.25em 0;
+  }
+}
+.footer__div--h2 {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   padding: 1em 1em 0.5em 1em;
 }
-.footer__ul {
+@media (min-width: 1440px) {
+  .footer__div--h2 {
+    padding: 1em;
+    margin-left: 3em;
+    order: 2;
+  }
+}
+.footer__div__ul {
   padding: 1em;
 }
-.footer__ul, .footer__ul__li {
+.footer__div__ul, .footer__div__ul__li {
   display: grid;
   line-height: 2em;
 }
-.footer__ul__a, .footer__ul__li__a {
+@media (min-width: 1440px) {
+  .footer__div__ul:nth-child(3), .footer__div__ul__li:nth-child(3) {
+    margin-left: 3em;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__div__ul, .footer__div__ul__li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    order: 1;
+  }
+}
+.footer__div__ul__a, .footer__div__ul__li__a {
   display: flex;
   align-items: center;
 }
-.footer__ul__a--i, .footer__ul__li__a--i {
+.footer__div__ul__a--i, .footer__div__ul__li__a--i {
   margin-right: 0.5em;
 }
 
@@ -158,22 +186,38 @@
 }
 
 /* GENERAL */
-.container {
-  padding: 0 1em;
-  margin: 0 auto;
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+.container-1440 {
+  max-width: 1440px;
+}
+@media (min-width: 1024px) {
+  .container-1440 {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 /* Section style */
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  margin: 2em auto;
+  display: flex;
+  align-items: flex-end;
+  max-width: 1300px;
+}
+
 .section__style {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-}
-.section__style--h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 2em 0;
-  display: flex;
-  align-items: flex-end;
 }
 
 /* Header */
@@ -185,6 +229,11 @@
   position: relative;
   z-index: 1;
   background-color: white;
+}
+@media (min-width: 1440px) {
+  .header-style {
+    padding: 1em;
+  }
 }
 
 header > div {
@@ -209,6 +258,7 @@ header > div > h2 {
   display: block;
   text-align: center;
   margin-bottom: 3em;
+  padding: 1em;
 }
 .information--h2 {
   font-size: 24px;
@@ -226,11 +276,19 @@ header > div > h2 {
   background-color: white;
   padding-bottom: 1.5em;
 }
-.fonctionnement__article {
+@media (min-width: 1024px) {
+  .fonctionnement__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1300px;
+  }
+}
+.fonctionnement__div__article {
   margin: 0 0 1.5em 1em;
   position: relative;
 }
-.fonctionnement__article--number-fonctionnement {
+.fonctionnement__div__article--number-fonctionnement {
   position: absolute;
   display: flex;
   align-items: center;
@@ -250,7 +308,38 @@ header > div > h2 {
   padding-bottom: 3em;
 }
 
+@media (min-width: 1024px) {
+  .restaurants-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1300px;
+  }
+}
+
 /* Menu Restaurants */
+.header {
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  font-size: 30px;
+  padding: 0.5em;
+}
+.header--h1 {
+  text-align: center;
+  position: relative;
+}
+.header__div {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #eaeaea;
+}
+.header__div--h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .background__image--position {
   width: 100%;
   z-index: -1;

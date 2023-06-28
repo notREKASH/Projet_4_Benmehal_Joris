@@ -3,26 +3,45 @@ $layout-text-align: center;
 $layout-align-items: center;
 $layout-width: 100%;
 
-/* GENERAL */
+// Responsive
 
+$desktop-large: 1440px;
+$desktop: 1024px;
+$mobile: 767.8px;
+
+/* GENERAL */
 .container {
-  padding: 0 1em;
-  margin: 0 auto;
+  @media (max-width: $desktop-large) {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+.container-1440 {
+  max-width: 1440px;
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 /* Section style */
 
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  margin: 2em auto;
+  display: $layout-display;
+  align-items: flex-end;
+  max-width: 1300px;
+}
+
 .section__style {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-
-  &--h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 2em 0;
-    display: $layout-display;
-    align-items: flex-end;
-  }
 }
 
 /* Header */
@@ -35,6 +54,10 @@ $layout-width: 100%;
   position: relative;
   z-index: 1;
   background-color: white;
+
+  @media (min-width: $desktop-large) {
+    padding: 1em;
+  }
 }
 
 header > div {
@@ -60,6 +83,7 @@ header > div > h2 {
   display: block;
   text-align: $layout-text-align;
   margin-bottom: 3em;
+  padding: 1em;
 
   &--h2 {
     font-size: 24px;
@@ -80,23 +104,32 @@ header > div > h2 {
   background-color: white;
   padding-bottom: 1.5em;
 
-  &__article {
-    margin: 0 0 1.5em 1em;
-    position: relative;
+  &__div {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      max-width: 1300px;
+    }
 
-    &--number-fonctionnement {
-      position: absolute;
-      display: $layout-display;
-      align-items: $layout-align-items;
-      justify-content: center;
-      bottom: 15px;
-      left: -15px;
-      color: white;
-      background-color: var(--primary-color);
-      padding: 0.25em;
-      border-radius: 100%;
-      width: 24px;
-      height: 24px;
+    &__article {
+      margin: 0 0 1.5em 1em;
+      position: relative;
+
+      &--number-fonctionnement {
+        position: absolute;
+        display: $layout-display;
+        align-items: $layout-align-items;
+        justify-content: center;
+        bottom: 15px;
+        left: -15px;
+        color: white;
+        background-color: var(--primary-color);
+        padding: 0.25em;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
@@ -105,4 +138,13 @@ header > div > h2 {
 
 .restaurant {
   padding-bottom: 3em;
+}
+
+.restaurants-layout {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1300px;
+  }
 }

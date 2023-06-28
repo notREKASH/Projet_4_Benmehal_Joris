@@ -4,6 +4,31 @@ $menu-width: 100%;
 $menu-margin-bottom: 1em;
 $menu-padding: 1em;
 
+.header {
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  font-size: 30px;
+  padding: 0.5em;
+
+  &--h1 {
+    text-align: $layout-text-align;
+    position: relative;
+  }
+
+  &__div {
+    display: $layout-display;
+    justify-content: center;
+    padding: 1em;
+    background-color: #eaeaea;
+
+    &--h2 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
 .background__image--position {
   width: $menu-width;
   z-index: -1;
