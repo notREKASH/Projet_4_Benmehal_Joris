@@ -90,11 +90,7 @@ $card-radius: 15px;
         background-size: 100%;
         line-height: 1;
         color: transparent;
-        background-image: linear-gradient(
-          193.33deg,
-          #9356dc -11.44%,
-          #ff79da 123.93%
-        );
+        background-image: var(--linear-gradient);
         background-clip: text;
         -webkit-background-clip: text;
       }
