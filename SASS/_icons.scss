@@ -14,3 +14,19 @@
   background-image: var(--linear-gradient);
   line-height: 1;
 }
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
+  display: flex;
+}
+
+.fa-xl {
+  line-height: 1;
+}
