@@ -183,7 +183,6 @@
 
 .fa-heart:focus {
   background-image: var(--linear-gradient);
-  line-height: 1;
 }
 
 .fa,
@@ -195,11 +194,8 @@
 .fab,
 .far,
 .fas {
-  display: flex;
-}
-
-.fa-xl {
-  line-height: 1;
+  display: flex !important;
+  line-height: 1em !important;
 }
 
 /* GENERAL */

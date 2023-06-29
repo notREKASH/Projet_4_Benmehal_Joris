@@ -12,8 +12,9 @@
 
 .fa-heart:focus {
   background-image: var(--linear-gradient);
-  line-height: 1;
 }
+
+// Utilisation de !important pour ignorer les styles par défaut appliquer par FA Awesome
 
 .fa,
 .fa-brands,
@@ -24,9 +25,6 @@
 .fab,
 .far,
 .fas {
-  display: flex;
-}
-
-.fa-xl {
-  line-height: 1;
+  display: flex !important;
+  line-height: 1em !important;
 }
