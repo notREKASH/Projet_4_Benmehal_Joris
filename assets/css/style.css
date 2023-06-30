@@ -426,6 +426,12 @@ header > div > h2 {
   width: 40px;
   margin-bottom: 1em;
 }
+.menu__card .four-plats {
+  height: 15%;
+}
+.menu__card .four-plats:last-child {
+  margin-bottom: 0;
+}
 .menu__card__plats {
   display: flex;
   align-items: center;
@@ -443,7 +449,7 @@ header > div > h2 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  padding: 2em;
+  padding: 2em 0.75em;
   background-color: transparent;
   text-align: left;
   padding-right: 0;
