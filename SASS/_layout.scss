@@ -7,7 +7,7 @@ $layout-width: 100%;
 
 $desktop-large: 1440px;
 $desktop: 1024px;
-$mobile: 767.8px;
+$mobile: 768px;
 
 /* GENERAL */
 .container {
@@ -33,10 +33,10 @@ $mobile: 767.8px;
   font-size: 24px;
   font-weight: 700;
   width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 1em auto;
   display: $layout-display;
   align-items: flex-end;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .section__style {
@@ -63,6 +63,7 @@ $mobile: 767.8px;
 header > div {
   display: $layout-display;
   justify-content: center;
+  gap: 17px;
   padding: 1em;
   background-color: #eaeaea;
 }
@@ -88,7 +89,11 @@ header > div > h2 {
   &--h2 {
     font-size: 24px;
     font-weight: 700;
-    padding: 1.5em 2em 0.5em 2em;
+    padding: 1.5em 1em 0.5em 1em;
+
+    @media (min-width: $desktop-large) {
+      font-size: 40px;
+    }
   }
 
   &--p {
@@ -102,14 +107,14 @@ header > div > h2 {
 
 .fonctionnement {
   background-color: white;
-  padding-bottom: 1.5em;
+  padding-bottom: 3em;
 
   &__div {
     @media (min-width: $desktop) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 50px;
-      max-width: 1300px;
+      gap: 25px;
+      max-width: 1100px;
     }
 
     &__article {
@@ -145,6 +150,6 @@ header > div > h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    max-width: 1300px;
+    max-width: 1100px;
   }
 }

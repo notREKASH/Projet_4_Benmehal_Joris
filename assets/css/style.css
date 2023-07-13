@@ -222,10 +222,10 @@
   font-size: 24px;
   font-weight: 700;
   width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 1em auto;
   display: flex;
   align-items: flex-end;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .section__style {
@@ -252,6 +252,7 @@
 header > div {
   display: flex;
   justify-content: center;
+  gap: 17px;
   padding: 1em;
   background-color: #eaeaea;
 }
@@ -276,7 +277,12 @@ header > div > h2 {
 .information--h2 {
   font-size: 24px;
   font-weight: 700;
-  padding: 1.5em 2em 0.5em 2em;
+  padding: 1.5em 1em 0.5em 1em;
+}
+@media (min-width: 1440px) {
+  .information--h2 {
+    font-size: 40px;
+  }
 }
 .information--p {
   font-size: 18px;
@@ -287,14 +293,14 @@ header > div > h2 {
 /* Index.html - Section Fonctionnement */
 .fonctionnement {
   background-color: white;
-  padding-bottom: 1.5em;
+  padding-bottom: 3em;
 }
 @media (min-width: 1024px) {
   .fonctionnement__div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    max-width: 1300px;
+    gap: 25px;
+    max-width: 1100px;
   }
 }
 .fonctionnement__div__article {
@@ -326,7 +332,7 @@ header > div > h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    max-width: 1300px;
+    max-width: 1100px;
   }
 }
 
