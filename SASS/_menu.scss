@@ -25,6 +25,10 @@ $menu-padding: 2em;
   font-size: 30px;
   padding: 0.5em;
 
+  @media (min-width: $desktop) {
+    padding: 1em;
+  }
+
   &--h1 {
     text-align: $layout-text-align;
     position: relative;
@@ -76,7 +80,7 @@ $menu-padding: 2em;
       position: relative;
       top: 20px;
       display: block;
-      height: 50px;
+      height: 20px;
       background-color: #f6f6f6;
     }
   }

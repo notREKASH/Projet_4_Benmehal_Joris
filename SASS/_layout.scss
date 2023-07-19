@@ -86,6 +86,10 @@ header > div > h2 {
   margin-bottom: 3em;
   padding: 1em;
 
+  @media (min-width: $desktop-large) {
+    margin-bottom: 1em;
+  }
+
   &--h2 {
     font-size: 24px;
     font-weight: 700;
@@ -93,6 +97,7 @@ header > div > h2 {
 
     @media (min-width: $desktop-large) {
       font-size: 40px;
+      padding: 10px 1em 1em 1em;
     }
   }
 
