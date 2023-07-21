@@ -104,7 +104,6 @@
   position: absolute;
   transition: all 0.5s ease-in-out;
   background-size: 100%;
-  line-height: 1;
   color: transparent;
   background-image: var(--linear-gradient);
   background-clip: text;
@@ -483,6 +482,7 @@ header > div > h2 {
   grid-column: 1/span 1;
   white-space: nowrap;
   font-size: 15.04px;
+  text-overflow: ellipsis;
 }
 .menu__card__plats__button--p:nth-of-type(2) {
   background-color: rgba(255, 255, 255, 0.904);
@@ -500,7 +500,7 @@ header > div > h2 {
 .menu__card__plats--input {
   display: none;
 }
-.menu__card__plats--input:checked ~ .menu__card__plats__container .fa-solid.fa-circle-check {
+.menu__card__plats--input:checked ~ .menu__card__plats__container .menu__card__plats__container--icons {
   right: 0;
 }
 .menu__card__plats--input:checked ~ .menu__card__plats__button .menu__card__plats__button--p:nth-of-type(2) {
@@ -516,11 +516,6 @@ header > div > h2 {
   width: 50px;
   height: 100%;
 }
-.menu__card__plats__container .fa-solid.fa-circle-check {
-  position: absolute;
-  right: -50px;
-  transition: right 0.5s ease-in-out;
-}
 .menu__card__plats__container--icons {
   background-color: #99e2d0;
   width: 100%;
@@ -531,6 +526,10 @@ header > div > h2 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
+  position: absolute;
+  right: -50px;
+  transition: right 0.5s ease-in-out;
+  background-color: #99e2d0;
 }
 
 .button__commander {
