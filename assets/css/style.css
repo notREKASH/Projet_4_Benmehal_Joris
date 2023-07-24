@@ -714,17 +714,6 @@ body {
   color: #ff79da;
   letter-spacing: 3px;
 }
-@media (max-width: 768px) {
-  .loader {
-    font-size: 32px;
-  }
-}
-@media (max-width: 1440px) and (min-width: 1024px) {
-  .loader {
-    font-size: 48px;
-  }
-}
-
 .loader::after {
   content: "ohmyfood";
   position: fixed;
@@ -735,6 +724,16 @@ body {
   height: 100%;
   overflow: hidden;
   animation: animloader 3s linear, fadeOut 3s linear forwards;
+}
+@media (max-width: 768px) {
+  .loader {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .loader {
+    font-size: 48px;
+  }
 }
 
 @keyframes animloader {
