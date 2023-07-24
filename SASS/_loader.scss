@@ -1,0 +1,73 @@
+$desktop-large: 1440px;
+$desktop: 1024px;
+$mobile: 768px;
+
+// Loader
+
+.loader {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 60px;
+  font-family: Shrikhand, cursive;
+  font-weight: bold;
+  background-size: 100%;
+  color: #ff79da;
+  letter-spacing: 3px;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $desktop-large) and (min-width: $desktop) {
+    font-size: 48px;
+  }
+}
+.loader::after {
+  content: "ohmyfood";
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: animloader 3s linear, fadeOut 3s linear forwards;
+}
+
+@keyframes animloader {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.background-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  animation: fadeOut 3s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  99% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
