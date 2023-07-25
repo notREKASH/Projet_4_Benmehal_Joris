@@ -462,75 +462,59 @@ header > div > h2 {
   border-radius: 15px;
   margin-bottom: 1em;
 }
-.menu__card__plats__button {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  width: 100%;
-  padding: 2em 0.75em;
-  background-color: transparent;
-  text-align: left;
-  padding-right: 0;
-}
-.menu__card__plats__button--h4 {
-  font-size: 18px;
-  line-height: 21.09px;
-  font-weight: bold;
-  grid-column: 1/span 2;
-}
-.menu__card__plats__button--p {
-  font-weight: 300;
-  grid-column: 1/span 1;
-  white-space: nowrap;
-  font-size: 15.04px;
-  text-overflow: ellipsis;
-}
-.menu__card__plats__button--p:nth-of-type(2) {
-  background-color: rgba(255, 255, 255, 0.904);
-  height: 120%;
-  width: 40px;
-  position: absolute;
-  grid-column: 2/span 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  right: -40px;
-  transition: transform 0.5s ease-in-out;
-}
 .menu__card__plats--input {
   display: none;
 }
-.menu__card__plats--input:checked ~ .menu__card__plats__container .menu__card__plats__container--icons {
-  right: 0;
-}
-.menu__card__plats--input:checked ~ .menu__card__plats__button .menu__card__plats__button--p:nth-of-type(2) {
-  right: -40px;
-  transform: translateX(-40px);
-}
-.menu__card__plats__container {
-  position: relative;
+.menu__card__plats__label {
+  padding: 0.7em;
+  max-width: 100%;
   overflow: hidden;
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 100%;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.menu__card__plats__container--icons {
-  background-color: #99e2d0;
-  width: 100%;
-  height: 100%;
+.menu__card__plats__label__platText {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color: white;
-  position: absolute;
-  right: -50px;
-  transition: right 0.5s ease-in-out;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.menu__card__plats__label__platText--title {
+  font-size: 18px;
+  line-height: 21.09px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__plats__label__platText--details {
+  font-weight: 300;
+  font-size: 15.04px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card__plats__label--price {
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0.3em;
+}
+.menu__card__plats--iconContainer {
   background-color: #99e2d0;
+  height: 100%;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: width 0.25s ease-in-out;
+  font-size: 1.2em;
+}
+
+.menu__card__plats--input:checked ~ .menu__card__plats--iconContainer {
+  width: 50px;
 }
 
 .button__commander {
@@ -790,6 +774,9 @@ body {
     transform: scale(1);
     opacity: 1;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
